@@ -17,7 +17,7 @@ j.registerMethods({
   },
 })
 
-module.exports = desugarClass = code => {
+const desugarClass = code => {
   return j(code)
     .find(j.ClassDeclaration)
     .forEach(path => {
@@ -29,18 +29,7 @@ module.exports = desugarClass = code => {
       )
       j(path).replaceWith(func)
     })
-    .findIdentifiers()
-    .logNames()
     .toSource()
 }
 
-const code = `
-class Test {
-  constructor() {
-    this.state = {}
-  }
-}
-class Omg {}
-`.trim('\n')
-
-console.log(desugarClass(code))
+module.exports = desugarClass
