@@ -1,6 +1,6 @@
 {
   "name": "desugar-class",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A codeshift utility to convert (or desugar) es6 classes to functions and prototypes. Used to demo how synctactic sugar works under the hood. ",
   "keywords": [
     "es6",
