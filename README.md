@@ -1,5 +1,7 @@
 # Live Demo of es6 Classes vs Protorypes
 
+Link to DEMO: https://codepen.io/mhd1991/pen/aabWaP
+
 *this demo is a participation in the [codepen challenge](https://codepen.io/challenges/2018/august/3) "Teach a Javascript Conecept"*
 
 Classes were introduced in es6 offering easier oop style programming. 
